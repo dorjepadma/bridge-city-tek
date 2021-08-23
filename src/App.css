@@ -1,4 +1,21 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+ }
+ .App-header {
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+ }
+
+ .bridge {
+   width: 100%
+  }
 
 
 
