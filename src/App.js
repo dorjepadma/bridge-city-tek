@@ -1,11 +1,13 @@
 
 import './App.css';
+import Header from './components/Header/Header.component.jsx';
 
 import Bridge from './assets/images/portlandBridge.jpeg'
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <div className="App-header">
 
       <h1>
