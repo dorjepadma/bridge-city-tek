@@ -24,6 +24,7 @@ const StyledTab = styled(Tab)(({ theme }) => ({
   ...theme.typography.tab,
   minWidth: 10,
   marginLeft: "auto",
+  color: "secondary"
 }));
 
 const Header = () => {
@@ -36,11 +37,13 @@ const Header = () => {
         <Typography variant="h3" color="secondary">
           Bridge City Tech
           </Typography>
+          <Tabs sx={{ marginLeft: "auto", fontSize: "4rem" }}>
           <StyledTab label="Home" />
           <StyledTab label="Services" />
           <StyledTab label="Blog" />
           <StyledTab label="About" />
           <StyledTab label="Contact" />
+          </Tabs>
           </Toolbar>
     </AppBar>
     </ElevationScroll>
