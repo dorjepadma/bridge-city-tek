@@ -1,7 +1,11 @@
 import React from "react";
-import { AppBar, Toolbar, useScrollTrigger } from "@mui/material";
-import { ThemeProvider } from "@mui/material/styles";
-// import { theme } from "./ui/Theme";
+
+import { AppBar, Toolbar, useScrollTrigger, Typography, Tabs, Tab, Box, styled } from "@mui/material";
+
+import Logo from '../../assets/images/BCTlogo.png'
+
+import './Header.styles.scss'
+
 
 
 function ElevationScroll(props) {
@@ -16,15 +20,31 @@ function ElevationScroll(props) {
     elevation: trigger ? 4 : 0,
   });
 }
+const StyledTab = styled(Tab)(({ theme }) => ({
+  ...theme.typography.tab,
+  minWidth: 10,
+  marginLeft: "auto",
+}));
 
-export default function Header(props) {
+const Header = () => {
   return (
+    <>
     <ElevationScroll>
-      <ThemeProvider > 
-    <AppBar position='fixed' color="primary">
-      <Toolbar>Bridge City Tech</Toolbar>
+    <AppBar position='fixed' >
+      <Toolbar disabledGutters={true}>
+        <img src={Logo} alt="BCT logo" className="logo" />
+        <Typography variant="h3" color="secondary">
+          Bridge City Tech
+          </Typography>
+          <StyledTab label="Home" />
+          <StyledTab label="Services" />
+          <StyledTab label="Blog" />
+          <StyledTab label="About" />
+          <StyledTab label="Contact" />
+          </Toolbar>
     </AppBar>
-    </ThemeProvider>
     </ElevationScroll>
+    </>
   );
 }
+export default Header

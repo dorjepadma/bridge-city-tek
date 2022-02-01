@@ -1,6 +1,6 @@
 
 import './App.css';
-import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider, Typography } from '@mui/material';
 import Header from './components/Header/Header.component.jsx';
 import theme from './components/ui/Theme.js';
 import Button from '@mui/material/Button';
@@ -12,17 +12,17 @@ function App() {
     <ThemeProvider theme={theme}> 
       <Header />
       <div className="App-header">
-      <h1>
+      <Typography variant='h2' className="App-header">
       Bridge City Tech
-      </h1>
+      </Typography>
       </div>
       <img className= 'bridge' src={Bridge} alt="A view of the Portland Bridge" />
-      <div className="App-header">
+      <Typography variant="h4" className="App-header">
       Web development based in Portland, Oregon. 
-      </div>  
-      <div className="App-header">
+      </Typography>  
+      <Typography variant='h3' className="App-header">
       contact: dorje@bridgecitytek.com 
-      </div> 
+      </Typography> 
       <Button color="secondary" variant="contained"> Color Test</Button>
     </ThemeProvider>
   );
