@@ -23,7 +23,7 @@ function App() {
       <Typography variant='h3' className="App-header">
       contact: dorje@bridgecitytek.com 
       </Typography> 
-      <Button color="secondary" variant="contained"> Color Test</Button>
+      <Button color="third" variant="contained"> Color Test</Button>
     </ThemeProvider>
   );
 }

@@ -1,6 +1,9 @@
 import React from "react";
 
-import { AppBar, Toolbar, useScrollTrigger, Typography, Tabs, Tab, Box, styled } from "@mui/material";
+import { AppBar, Toolbar, useScrollTrigger, Typography, Tabs, Tab, styled, createTheme, ThemeProvider, Button, Box} from "@mui/material";
+
+import theme from '../ui/Theme.js';
+
 
 import Logo from '../../assets/images/BCTlogo.png'
 
@@ -16,6 +19,7 @@ function ElevationScroll(props) {
     threshold: 20,
   });
 
+
   return React.cloneElement(children, {
     elevation: trigger ? 4 : 0,
   });
@@ -23,27 +27,40 @@ function ElevationScroll(props) {
 const StyledTab = styled(Tab)(({ theme }) => ({
   ...theme.typography.tab,
   minWidth: 10,
-  marginLeft: "auto",
-  color: "secondary"
+  color: "#ffffff",
+  fontFamily: 'Raleway',
+  fontWeight: 'bold',
+  fontSize: '1rem',
+ 
 }));
 
 const Header = () => {
+  const [value, setValue] = React.useState(0);
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   return (
     <>
     <ElevationScroll>
-    <AppBar position='fixed' >
+    <AppBar container position='fixed' >
       <Toolbar disabledGutters={true}>
         <img src={Logo} alt="BCT logo" className="logo" />
-        <Typography variant="h3" color="secondary">
+        <Typography variant="h3" color="third">
           Bridge City Tech
           </Typography>
-          <Tabs sx={{ marginLeft: "auto", fontSize: "4rem" }}>
+       
+
+          <Tabs value={value} onChange={handleChange}  textColor="#ffffff"
+        indicatorColor="secondary"
+        aria-label="secondary tabs example" sx={{ marginLeft: 'auto', minWidth: 5,  }}>
           <StyledTab label="Home" />
           <StyledTab label="Services" />
           <StyledTab label="Blog" />
           <StyledTab label="About" />
           <StyledTab label="Contact" />
           </Tabs>
+      
+          <Button variant='contained' color= "secondary" sx={{fontFamily: "Raleway", color: '#ffffff', backgroundColor:'#0398dc', borderRadius: 10, marginLeft:'50px', marginRight: '50px'}}>Free Quote</Button>
           </Toolbar>
     </AppBar>
     </ElevationScroll>
