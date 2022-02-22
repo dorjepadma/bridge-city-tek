@@ -1,7 +1,9 @@
 
 import './App.css';
+import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
 import { ThemeProvider, Typography } from '@mui/material';
 import Header from './components/Header/Header.component.jsx';
+import HomePage from './pages/Home/home.component.jsx';
 import theme from './components/ui/Theme.js';
 import Button from '@mui/material/Button';
 
@@ -10,20 +12,21 @@ import Bridge from './assets/images/portlandBridge.jpeg'
 function App() {
   return (
     <ThemeProvider theme={theme}> 
+    <BrowserRouter>
       <Header />
-      <div className="App-header">
-      <Typography variant='h2' className="App-header">
-      Bridge City Tech
-      </Typography>
-      </div>
-      <img className= 'bridge' src={Bridge} alt="A view of the Portland Bridge" />
-      <Typography variant="h4" className="App-header">
-      Web development based in Portland, Oregon. 
-      </Typography>  
-      <Typography variant='h3' className="App-header">
-      contact: dorje@bridgecitytek.com 
-      </Typography> 
-      <Button color="third" variant="contained"> Color Test</Button>
+        <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/services' component={() => <div>services</div>} />
+        <Route exact path='/customSoftware' component={() => <div>Custom Software</div>} />
+        <Route exact path='/mobileapps' component={() => <div>Mobile Apps</div>} />
+        <Route exact path='/websites' component={() => <div>Websites</div>} />
+        <Route exact path='/seo' component={() => <div>Search Engine Enhancment</div>} />
+        <Route exact path='/blog' component={() => <div>Blog</div>} />
+        <Route exact path='/about' component={() => <div>About Us</div>} />
+        <Route exact path='/contact' component={() => <div>Contact</div>} />
+        <Route exact path='/estimates' component={() => <div>Estimates</div>} />
+        </Switch>
+    </BrowserRouter>
     </ThemeProvider>
   );
 }
