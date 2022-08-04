@@ -1,0 +1,65 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.app-header {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  position: fixed;
+  margin-top: 10;
+  width: 100%;
+  z-index: 1;
+}
+.bridge {
+  background-image: url('../../assets/images/BlackandWhiteBridge.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+
+}
+.bridgesCard {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 30px;
+  padding: 20px;
+  position: relative;
+  top: 0;
+  width: 40%;
+  z-index: 1;
+  opacity: 0.6;
+
+}
+.homeTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 80px;
+  width: 100%;
+  font-weight: bold;
+  font-size: xx-large;
+
+}
