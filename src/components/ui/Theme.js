@@ -3,7 +3,7 @@ import { createTheme } from '@mui/material/styles';
  const theme = createTheme({
   palette: {
     primary: {
-      main: '#0f52ba',
+      main: '#000000',
     },
     secondary: {
       main: '#32cd32',
@@ -13,11 +13,12 @@ import { createTheme } from '@mui/material/styles';
     },
   },
   paper: {
-    backgroundColor: '#0398dc', 
+    backgroundColor: 'black', 
   },
   typography: {
     fontFamily: 'Times New Roman, Raleway',
-    fontSize: 15,
+    fontColor: '#000000',
+    color: 'black',
     h1: { // incase h1 needs to have a separate fontFamily 
       fontFamily: 'Roboto',
       fontWeight: 15,
@@ -27,7 +28,8 @@ import { createTheme } from '@mui/material/styles';
       fontSize: 21,
     }},
     menu: {
-      backgroundColor: '#0398dc',
+      backgroundColor: '#ffffff',
+      fontColor: '#000000',
     },
   });
 

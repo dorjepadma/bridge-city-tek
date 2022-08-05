@@ -11,7 +11,7 @@ const HomePage = () => {
  
   <div className='homeContainer'> 
       <div variant='h1' className="homeTitle">
-      Bridge City Tech
+      Bridge City Tek
       </div>
     <div className='bridge'>
       <div variant="h4" className="bridgesCard">
