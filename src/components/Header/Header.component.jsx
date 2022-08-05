@@ -107,12 +107,12 @@ const Header = (props) => {
         <img alt="BCT logo" className="logo" src={Logo} />
         </Button>
         <Typography variant="h3" color="third">
-          Bridge City Tech
+          Bridge City Tek
           </Typography>
 
           <Tabs value={value} 
           onChange={handleChange}  
-          textColor="#ffffff"
+          textColor="#9999"
           indicatorColor="secondary"
           aria-label="secondary tabs example" sx={{ marginLeft: 'auto', minWidth: 5,  }}>
           <StyledTab component={Link} to='/' label="home" />
@@ -134,7 +134,7 @@ const Header = (props) => {
           open={open} 
           onClose={handleClose}
           MenuListProps={{onMouseLeave: handleClose}}
-          classes={{ paper: 'menu' }}          
+          classes={{ paper: 'menu', fontColor: '#000000' }}         
           >
             <MenuItem onClick={() => {handleClose(); setValue(1)} }
              component = {Link} 
