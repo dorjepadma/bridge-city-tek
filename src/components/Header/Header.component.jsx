@@ -1,5 +1,6 @@
 import React, { useState, useEffect }from "react";
 import { Link } from "react-router-dom";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import { AppBar,
    Toolbar,
@@ -13,7 +14,8 @@ import { AppBar,
     ListItem,
     ListItemText,
     MenuItem,
-    Menu } from "@mui/material";
+    Menu,
+  Paper } from "@mui/material";
 
 
 import theme from '../ui/Theme.js';
@@ -45,8 +47,10 @@ const StyledTab = styled(Tab)(({ theme }) => ({
   fontFamily: 'Raleway',
   fontWeight: 'bold',
   fontSize: '1rem',
+
  
 }));
+
 
 const Header = (props) => {
   //handles change of tab value
@@ -122,20 +126,31 @@ const Header = (props) => {
           <StyledTab component = {Link} to='contact'label="contact" />
           </Tabs>
       
-          <Button variant='contained' color= "secondary" sx={{fontFamily: "Raleway", color: '#ffffff', backgroundColor:'#0398dc', borderRadius: 10, marginLeft:'50px', marginRight: '50px'}}>
+          <Button variant='contained' color= "secondary" sx={{fontFamily: "Raleway", color: '#ffffff', backgroundColor:'#0286FF', borderRadius: 10, marginLeft:'50px', marginRight: '50px'}}>
             Free Quote
           </Button>
-          <Menu id='simple-menu' anchorEl={anchorEl} open={open} onClose={handleClose}
-          MenuListProps={{onMouseLeave: handleClose}}>
+       
+          <Menu anchorEl={anchorEl} 
+          open={open} 
+          onClose={handleClose}
+          MenuListProps={{onMouseLeave: handleClose}}
+          classes={{ paper: 'menu' }}          
+          >
+            <MenuItem onClick={() => {handleClose(); setValue(1)} }
+             component = {Link} 
+             to='services'>
+               Services
+               </MenuItem>
             <MenuItem onClick={() => {handleClose(); setValue(1)} }
              component = {Link} 
              to='customsoftware'>
-               Custom Software development
+               Custom Software
                </MenuItem>
             <MenuItem onClick={() => {handleClose(); setValue(2)} } component = {Link} to='mobileapps'>Mobile Apps</MenuItem>
             <MenuItem onClick={() => {handleClose(); setValue(3)} } component = {Link} to='websites'>Website Creation</MenuItem>
             <MenuItem onClick={() => {handleClose(); setValue(4)} } component = {Link} to='seo'>SEO Optimization</MenuItem>
             </Menu>
+  
           </Toolbar>
     </AppBar>
     </ElevationScroll>
