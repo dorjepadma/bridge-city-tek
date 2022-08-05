@@ -126,7 +126,7 @@ const Header = (props) => {
           <StyledTab component = {Link} to='contact'label="contact" />
           </Tabs>
       
-          <Button variant='contained' color= "secondary" sx={{fontFamily: "Raleway", color: '#ffffff', backgroundColor:'#0286FF', borderRadius: 10, marginLeft:'50px', marginRight: '50px'}}>
+          <Button variant='contained' color= "secondary" sx={{fontFamily: "Raleway", color: '#000', backgroundColor:'#ffffff', borderRadius: 10, marginLeft:'50px', marginRight: '50px'}}>
             Free Quote
           </Button>
        
