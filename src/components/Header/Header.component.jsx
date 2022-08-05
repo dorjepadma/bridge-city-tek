@@ -139,7 +139,7 @@ const Header = (props) => {
             <MenuItem onClick={() => {handleClose(); setValue(1)} }
              component = {Link} 
              to='services'>
-               Services
+               Services :
                </MenuItem>
             <MenuItem onClick={() => {handleClose(); setValue(1)} }
              component = {Link} 
@@ -147,7 +147,8 @@ const Header = (props) => {
                Custom Software
                </MenuItem>
             <MenuItem onClick={() => {handleClose(); setValue(2)} } component = {Link} to='mobileapps'>Mobile Apps</MenuItem>
-            <MenuItem onClick={() => {handleClose(); setValue(3)} } component = {Link} to='websites'>Website Creation</MenuItem>
+            <MenuItem onClick={() => {handleClose(); setValue(3)} } component = {Link} to='websites'>UI/UX Design</MenuItem>
+            <MenuItem onClick={() => {handleClose(); setValue(3)} } component = {Link} to='websites'>Web Development</MenuItem>
             <MenuItem onClick={() => {handleClose(); setValue(4)} } component = {Link} to='seo'>SEO Optimization</MenuItem>
             </Menu>
   

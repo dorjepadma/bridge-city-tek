@@ -15,7 +15,7 @@ const HomePage = () => {
       </div>
     <div className='bridge'>
       <div variant="h4" className="bridgesCard">
-      Bridges connect ideas, people, goods and services together. Here at Bridge City Tech we exist to help you connect with others. Whether it is an idea or business, we are here to help you communicate with the world. Bringing the power of technology to the people around you.
+      Bridges connect ideas, people, goods and services together. Here at Bridge City Tech we exist to help you connect with others. Whether it is an idea or business, we are here to help you communicate with the world. Bringing your idea, business, art, or creativity to the world around you.
       </div>  
     </div>
 
