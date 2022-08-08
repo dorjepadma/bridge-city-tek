@@ -1,0 +1,76 @@
+.blogContainer {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 110%;
+  background:(url('../../assets/images/waterfall.jpeg'), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))); 
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size:cover;
+
+}
+.blogTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 80px;
+  margin-left:40px;
+  width: 100%;
+  font-weight: bold;
+  font-size: xx-large;
+  color:white;
+}
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  margin-top: 80px;
+  width: 100%;
+  font-weight: bold;
+  font-size: large;
+}
+.blogCard {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+  margin-bottom: 180px;
+  padding: 30px;
+  padding: 30px;
+  height: 40%;
+  width: 40%;
+  opacity: 0.6;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+}
+.contactFootnote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 80px;
+  width: 100%;
+  font-weight: bold;
+  font-size: xx-large;
+  color:white;
+}
