@@ -1,14 +1,16 @@
 
 import './App.css';
-import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
-import { ThemeProvider, Typography } from '@mui/material';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { ThemeProvider } from '@mui/material';
 import Header from './components/Header/Header.component.jsx';
 import HomePage from './pages/Home/home.component.jsx';
 import Blog from './pages/Blog/blog.component.jsx';
+import Contact from './pages/Contact/contact.component.jsx';
+import About from './pages/About/about.component.jsx';
 import theme from './components/ui/Theme.js';
-import Button from '@mui/material/Button';
 
-import Bridge from './assets/images/portlandBridge.jpeg'
+
+
 
 function App() {
   return (
@@ -23,8 +25,8 @@ function App() {
         <Route exact path='/websites' component={() => <div>Websites</div>} />
         <Route exact path='/seo' component={() => <div>Search Engine Enhancment</div>} />
         <Route exact path='/blog' component={Blog} />
-        <Route exact path='/about' component={() => <div>About Us</div>} />
-        <Route exact path='/contact' component={() => <div>Contact</div>} />
+        <Route exact path='/about' component={About} />
+        <Route exact path='/contact' component={Contact} />
         <Route exact path='/estimates' component={() => <div>Estimates</div>} />
         </Switch>
     </BrowserRouter>
