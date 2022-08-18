@@ -1,0 +1,53 @@
+.websites {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+}
+.websites-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+  height: 20vw;
+  overflow: auto;
+  color: rgb(0, 0, 5);
+ margin-bottom: 0;
+}
+.websites-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  width: 60vw;
+  height: 30vw;
+  overflow: auto;
+  color: rgb(244, 244, 250);
+  background-image: url('../../assets/images/dayne-topkin-website.png');
+}
+.slideText {
+  font-weight: 700;
+  font-size: x-large;
+  color: rgb(244, 244, 249);
+  text-align: center;
+  margin-top: 20px;
+  margin-left:300px;
+  margin-bottom: 300px;
+  animation: fadeIn 5s;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+}
