@@ -1,6 +1,5 @@
 import React, { useState, useEffect }from "react";
 import { Link } from "react-router-dom";
-import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import { AppBar,
    Toolbar,
@@ -10,15 +9,11 @@ import { AppBar,
     Tab,
     styled,
     Button,
-    List,
-    ListItem,
-    ListItemText,
     MenuItem,
-    Menu,
-  Paper } from "@mui/material";
+    Menu } from "@mui/material";
 
 
-import theme from '../ui/Theme.js';
+// import theme from '../ui/Theme.js';
 
 
 import Logo from '../../assets/images/BCTlogo.png'
@@ -147,7 +142,7 @@ const Header = (props) => {
                Custom Software
                </MenuItem>
             <MenuItem onClick={() => {handleClose(); setValue(2)} } component = {Link} to='mobileapps'>Mobile Apps</MenuItem>
-            <MenuItem onClick={() => {handleClose(); setValue(3)} } component = {Link} to='websites'>UI/UX Design</MenuItem>
+            <MenuItem onClick={() => {handleClose(); setValue(3)} } component = {Link} to='Intriguing Designs'>UI/UX Design</MenuItem>
             <MenuItem onClick={() => {handleClose(); setValue(3)} } component = {Link} to='websites'>Web Development</MenuItem>
             <MenuItem onClick={() => {handleClose(); setValue(4)} } component = {Link} to='seo'>SEO Optimization</MenuItem>
             </Menu>
