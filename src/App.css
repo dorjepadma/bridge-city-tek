@@ -5,16 +5,13 @@ body {
   flex-direction: column;
   height: 100vh;
  }
- .App-header {
+ .App {
   font-size: larger;
   display: flex;
   align-items: center;
   justify-content: center;
  }
 
- .bridge {
-   width: 100%
-  }
 
 
 
